@@ -12,6 +12,15 @@ export function createDom(node) {
 	return element;
 }
 
+// chilren은 길이가 가변적인 가변인자로 받음
+export function createElement(tag, props, ...children) {
+	return {
+		tag,
+		props,
+		children,
+	};
+}
+
 export function render(vdom, container) {
 	container.appendChild(createDom(vdom));
 }
