@@ -1,5 +1,4 @@
-import { reduceRight } from 'lodash';
-import { createDom, render } from './react';
+import { render } from './react';
 
 const vdom = {
 	tag: 'p',
